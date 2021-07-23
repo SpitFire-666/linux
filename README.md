@@ -19,3 +19,9 @@ mkdir -p ~/.ssh
 nano ~/.ssh/authorized_keys
 ````
  
+Message Of The Day (MOTD)
+
+````cat /etc/motd````
+
+Use NeoFetch for a nice MOTD
+````sudo apt-get install neofetch -y && sudo bash -c $'echo "neofetch" >> /etc/profile.d/mymotd.sh && chmod +x /etc/profile.d/mymotd.sh' ````
