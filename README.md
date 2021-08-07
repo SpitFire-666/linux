@@ -25,3 +25,7 @@ Message Of The Day (MOTD)
 
 Use NeoFetch for a nice MOTD
 ````sudo apt-get install neofetch -y && sudo bash -c $'echo "neofetch" >> /etc/profile.d/mymotd.sh && chmod +x /etc/profile.d/mymotd.sh' ````
+
+### Bash script example
+
+### Sleep
