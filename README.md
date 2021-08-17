@@ -29,3 +29,7 @@ Use NeoFetch for a nice MOTD
 ### Bash script example
 
 ### Sleep
+
+## Modern Linux Tool Alternatives 
+
+https://github.com/ibraheemdev/modern-unix
