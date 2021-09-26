@@ -37,6 +37,69 @@ deb-src https://deb.debian.org/debian/ unstable main contrib non-free
 
 ### Bash script example
 
+pi@pihole:/var/www/html $ for i in {1..5}; do echo "$i" ; done
+
+
+### install powershell
+sudo apt-get install -y powershell 
+
+Show available Shells 
+
+ 
+
+ 
+	
+
+cat /etc/shells 
+
+Change default shell to PowerShell 
+
+sudo chsh username -s /usr/bin/powershell 
+
+ 
+ Install java (to launch .jar files) 
+
+sudo apt-get install openjdk-9-jre 
+
+ 
+
+Mark a file as executable (eg .jar files) 
+
+sudo chmod +x /home/mike/Downloads/minecraft.jar 
+
+ 
+  
+
+Check SELinux status 
+
+Sestatus 
+
+ 
+
+Stop Firewall service 
+
+sudo service firewalld stop 
+
+ 
+ Set/change hostname 
+
+Reboot may be required to change the hostname 
+
+ 
+	
+
+hostnamectl set-hostname <hostname> 
+
+ 
+	
+###Grep 
+
+here's a basic grep function if you want to search for a string in raw text files:  
+````
+grep -r -i YOURKEYWORDHERE
+````
+    
+    
 ### Sleep
 
 ## Modern Linux Tool Alternatives 
