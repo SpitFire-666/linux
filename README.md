@@ -1,6 +1,3 @@
-
-
-
 ### SSH without password
 
     Generate the key on the local system 
@@ -37,8 +34,14 @@ deb-src https://deb.debian.org/debian/ unstable main contrib non-free
 
 ### Bash script example
 
-pi@pihole:/var/www/html $ for i in {1..5}; do echo "$i" ; done
+https://linuxhint.com/30_bash_script_examples/
 
+````
+for i in {1..5};
+do
+echo "$i" ;
+done
+````
 
 ### install powershell
 sudo apt-get install -y powershell 
@@ -46,9 +49,6 @@ sudo apt-get install -y powershell
 Show available Shells 
 
  
-
- 
-	
 
 cat /etc/shells 
 
@@ -86,8 +86,6 @@ sudo service firewalld stop
 Reboot may be required to change the hostname 
 
  
-	
-
 hostnamectl set-hostname <hostname> 
 
  
