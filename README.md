@@ -85,9 +85,9 @@ sudo service firewalld stop
 
 Reboot may be required to change the hostname 
 
- 
-hostnamectl set-hostname <hostname> 
-
+````
+sudo hostnamectl set-hostname <hostname> 
+````
  
 	
 ###Grep 
