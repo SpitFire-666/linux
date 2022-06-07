@@ -1,13 +1,17 @@
 ### SSH without password
 
 Generate the key on the local system (Requires Win10)
+- this creates a key then copies its contents to the clipboard
 
-```ssh-keygen.exe```
+```
+ssh-keygen.exe -f file
+cat .\file.pub | clip
+````
 
-Copy the content of id_rsa.pub to the remote (linux) box 
+Add the clipboard contents to the id_rsa.pub file on the Linux box 
 
 ````
-~\.ssh\id_rsa.pub 
+sudo nano ~/.ssh/id_rsa.pub
 ````
 
 ````
