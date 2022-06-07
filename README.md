@@ -2,7 +2,7 @@
 
     Generate the key on the local system 
 
-Requires Linux/Win10/ ssh-keygen.exe 
+Requires Win10
 
 ```ssh-keygen.exe```
 
@@ -44,18 +44,21 @@ done
 ````
 
 ### install powershell
+
+````
 sudo apt-get install -y powershell 
+````
 
 Show available Shells 
 
- 
-
+````
 cat /etc/shells 
+````
 
 Change default shell to PowerShell 
-
+````
 sudo chsh username -s /usr/bin/powershell 
-
+````
  
  Install java (to launch .jar files) 
 
@@ -71,15 +74,15 @@ sudo chmod +x /home/mike/Downloads/minecraft.jar
   
 
 Check SELinux status 
-
+````
 Sestatus 
-
+````
  
 
 Stop Firewall service 
-
+````
 sudo service firewalld stop 
-
+````
  
  Set/change hostname 
 
