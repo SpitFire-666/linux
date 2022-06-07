@@ -1,8 +1,6 @@
 ### SSH without password
 
-    Generate the key on the local system 
-
-Requires Win10
+Generate the key on the local system (Requires Win10)
 
 ```ssh-keygen.exe```
 
