@@ -71,6 +71,11 @@ sudo smbpasswd -a pi
 sudo service smbd restart
 ```
 
+- If you get an error about guest access on Windows, use gpedit.msc to adjust this setting:
+
+```
+Computer configuration > administrative templates > network > Lanman Workstation: "Enable insecure guest logons" = Enabled
+```
 
 
 ### Bash script example
