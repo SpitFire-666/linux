@@ -41,7 +41,37 @@ deb-src https://deb.debian.org/debian/ unstable main contrib non-free
 ````
 
 ## SMB Server
+- Install samba:
+```console
 sudo apt-get install samba -y
+```
+- configure samba:
+```console
+sudo nano /etc/samba/smb.conf
+```
+- Append this config - adjust the Valid users line if required:
+
+````
+[sharedfolder]
+comment = secured shared folder
+path = /srv/samba/data
+Valid users = pi
+guest ok = no
+writable = yes
+privatable = no
+browsable = yes
+````
+
+- Create a login for user "pi"
+```console
+sudo smbpasswd -a pi
+```
+- Restart the service
+```console
+sudo service smbd restart
+```
+
+
 
 ### Bash script example
 
@@ -102,10 +132,10 @@ sudo hostnamectl set-hostname <hostname>
 	
 ### Grep 
 
-here's a basic grep function if you want to search for a string in raw text files:  
-````
+Search for a string in raw text files:  
+```console
 grep -r -i YOURKEYWORDHERE
-````
+```
         
 ### Sleep
 
