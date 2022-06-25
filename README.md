@@ -3,22 +3,28 @@
 Generate the key on the local system (Requires Win10)
 - this creates a key then copies its contents to the clipboard
 
-```
+```ps
 ssh-keygen.exe -f file
 cat .\file.pub | clip
-````
+```
 
 Add the clipboard contents to the id_rsa.pub file on the Linux box 
 
 ````
+mkdir ~/.ssh
 sudo nano ~/.ssh/id_rsa.pub
 ````
 
-````
+```console
 mkdir -p ~/.ssh
 nano ~/.ssh/authorized_keys
-````
- 
+```
+
+## Update/Upgrade repos
+```console
+sudo apt update && sudo apt upgrade
+```
+
 ### Message Of The Day (MOTD)
 
 ````cat /etc/motd````
@@ -34,11 +40,14 @@ deb https://deb.debian.org/debian/ unstable main contrib non-free
 deb-src https://deb.debian.org/debian/ unstable main contrib non-free
 ````
 
+## SMB Server
+sudo apt-get install samba -y
+
 ### Bash script example
 
 https://linuxhint.com/30_bash_script_examples/
 
-````
+````console
 for i in {1..5};
 do
 echo "$i" ;
@@ -47,62 +56,57 @@ done
 
 ### install powershell
 
-````
+```console
 sudo apt-get install -y powershell 
-````
+```
 
 Show available Shells 
 
-````
+```console
 cat /etc/shells 
-````
+```
 
 Change default shell to PowerShell 
-````
+```console
 sudo chsh username -s /usr/bin/powershell 
-````
+```
  
  Install java (to launch .jar files) 
-
+```console
 sudo apt-get install openjdk-9-jre 
-
- 
+```
 
 Mark a file as executable (eg .jar files) 
-
+```console
 sudo chmod +x /home/mike/Downloads/minecraft.jar 
-
+```
  
-  
 
-Check SELinux status 
-````
+## Check SELinux status 
+```console
 Sestatus 
-````
- 
+```
 
-Stop Firewall service 
+## Stop Firewall service 
 ````
 sudo service firewalld stop 
 ````
  
- Set/change hostname 
+## Set/change hostname 
 
 Reboot may be required to change the hostname 
 
 ````
 sudo hostnamectl set-hostname <hostname> 
 ````
- 
 	
-###Grep 
+### Grep 
 
 here's a basic grep function if you want to search for a string in raw text files:  
 ````
 grep -r -i YOURKEYWORDHERE
 ````
-    
-    
+        
 ### Sleep
 
 ## Modern Linux Tool Alternatives 
