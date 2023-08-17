@@ -2,8 +2,9 @@
 ### 🔨 FIX repos/errors
 
 ```bash
-sudo apt update
 sudo apt autoremove
+sudo apt --fix-broken install -y
+sudo apt update
 ```
 
 ### SSH without password
