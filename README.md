@@ -1,3 +1,11 @@
+
+### 🔨 FIX repos/errors
+
+```bash
+sudo apt update
+sudo apt autoremove
+```
+
 ### SSH without password
 
 Generate the key on the local system (Requires Win10)
