@@ -5,6 +5,7 @@
 sudo apt autoremove
 sudo apt --fix-broken install -y
 sudo apt update
+sudo apt-get --allow-releaseinfo-change update
 ```
 
 ### SSH without password
@@ -100,13 +101,13 @@ done
 
 ### install powershell
 
-```console
+```bash
 sudo apt-get install -y powershell 
 ```
 
 Show available Shells 
 
-```console
+```bash
 cat /etc/shells 
 ```
 
@@ -124,7 +125,6 @@ Mark a file as executable (eg .jar files)
 ```console
 sudo chmod +x /home/mike/Downloads/minecraft.jar 
 ```
- 
 
 ## Check SELinux status 
 ```console
@@ -132,27 +132,30 @@ Sestatus
 ```
 
 ## Stop Firewall service 
-````
+```bash
 sudo service firewalld stop 
-````
+```
  
 ## Set/change hostname 
 
 Reboot may be required to change the hostname 
 
-````
+```bash
 sudo hostnamectl set-hostname <hostname> 
-````
+```
 	
 ### Grep 
 
 Search for a string in raw text files:  
-```console
+```bash
 grep -r -i YOURKEYWORDHERE
 ```
         
 ### Sleep
 
 ## Modern Linux Tool Alternatives 
+
+### cat (bat)
+sudo apt-get --allow-releaseinfo-change update
 
 https://github.com/ibraheemdev/modern-unix
