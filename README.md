@@ -11,24 +11,18 @@ sudo apt-get --allow-releaseinfo-change update
 ### SSH without password
 
 Generate the key on the local system (Requires Win10)
-- this creates a key then copies its contents to the clipboard
 
 ```ps
-ssh-keygen.exe -f file
-cat .\file.pub | clip
+ssh-keygen.exe
+cat ~\.ssh\id_rsa.pub | clip # copy public key to clipboard
 ```
 
-Add the clipboard contents to the id_rsa.pub file on the Linux box 
+Add the clipboard contents to the authorized_keys file on the Linux box 
 
-````
-mkdir ~/.ssh
-sudo nano ~/.ssh/id_rsa.pub
-````
-
-```console
-mkdir -p ~/.ssh
-nano ~/.ssh/authorized_keys
+```bash
+sudo nano ~/.ssh/authorized_keys
 ```
+
 
 ## Update/Upgrade repos
 ```console
