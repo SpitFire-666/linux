@@ -1,7 +1,17 @@
 ### Uninstall bloatware
 ```bash
 sudo apt-get remove thunderbird -y
-sudo apt-get remove libreoffice*
+sudo apt-get remove libreoffice* -y
+sudo apt-get remove hexchat -y
+sudo apt-get remove pix -y
+sudo apt-get remove transmission-* -y
+sudo apt-get remove bluetooth -y
+sudo apt-get remove blueman -y
+sudo apt-get remove celluloid -y
+sudo apt-get remove hypnotix -y
+sudo apt-get remove rhythmbox -y
+sudo apt-get remove webapp-manager -y
+sudo apt-get remove drawing -y
 ```
 
 ### 🔨 FIX repos/errors
