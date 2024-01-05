@@ -1,3 +1,8 @@
+### Uninstall bloatware
+```bash
+sudo apt-get remove thunderbird -y
+sudo apt-get remove libreoffice*
+```
 
 ### 🔨 FIX repos/errors
 
