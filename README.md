@@ -1,3 +1,18 @@
+### Networking: show default gateway
+```bash
+ip route list
+```
+
+- remove default gateway
+```bash
+sudo ip route delete default
+```
+
+- Add default gateway
+```bash
+sudo ip route add default via 192.168.1.1 dev eth0
+```
+
 ### Uninstall bloatware
 ```bash
 sudo apt-get remove thunderbird -y
