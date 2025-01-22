@@ -1,3 +1,8 @@
+### disable auto lock
+```
+TBC
+```
+
 ### Autologon
 ```
 TBC
