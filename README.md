@@ -1,3 +1,13 @@
+### Autologon
+```
+TBC
+```
+
+### Run program at startup
+```
+TBC
+```
+
 ### Networking: show default gateway
 ```bash
 ip route list
