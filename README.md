@@ -79,7 +79,13 @@ sudo apt update && sudo apt upgrade
 ````cat /etc/motd````
 
 Use NeoFetch for a nice MOTD
-````sudo apt-get install neofetch -y && sudo bash -c $'echo "neofetch" >> /etc/profile.d/mymotd.sh && chmod +x /etc/profile.d/mymotd.sh' ````
+
+![image](https://github.com/user-attachments/assets/3ba26c92-086e-49cc-9788-510b7e1a1101)
+
+
+```bash
+sudo apt-get install neofetch -y && sudo bash -c $'echo "neofetch" >> /etc/profile.d/mymotd.sh && chmod +x /etc/profile.d/mymotd.sh'
+```
 
 ### Add unstable repo
 
