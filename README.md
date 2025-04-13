@@ -1,3 +1,9 @@
+### Install SSH server (ubuntu)
+```bash
+sudo apt get install openssh-server -y
+sudo systemctl enable ssh && sudo systemctl start ssh
+```
+
 ### disable auto lock
 ```bash
 gsettings set org.gnome.desktop.screensaver lock-enabled false
