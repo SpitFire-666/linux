@@ -7,6 +7,11 @@ gsettings set org.gnome.desktop.screensaver lock-enabled false
 
 ```
 
+### Dark mode
+```bash
+gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+```
+
 ### Autologon
 ```
 TBC
