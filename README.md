@@ -1,6 +1,10 @@
 ### disable auto lock
-```
+```bash
 gsettings set org.gnome.desktop.screensaver lock-enabled false
+```
+### Install virtualbox guest additions
+```bash
+
 ```
 
 ### Autologon
