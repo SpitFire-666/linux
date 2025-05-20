@@ -1,3 +1,8 @@
+### Install Cool Retro Term (ubuntu)
+```bash
+sudo apt install cool-retro-term -y
+```
+
 ### Install SSH server (ubuntu)
 ```bash
 sudo apt get install openssh-server -y
