@@ -1,3 +1,8 @@
+### Create a variable
+```bash
+VARIABLE_NAME=value
+```
+
 ### Install Cool Retro Term (ubuntu)
 ```bash
 sudo apt install cool-retro-term -y
