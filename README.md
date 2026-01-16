@@ -108,6 +108,13 @@ Use NeoFetch for a nice MOTD
 
 ![image](https://github.com/user-attachments/assets/3ba26c92-086e-49cc-9788-510b7e1a1101)
 
+Neofetch
+
+```shell
+wget -qO fastfetch.tar.gz https://github.com/fastfetch-cli/fastfetch/releases/latest/download/fastfetch-linux-amd64.tar.gz
+sudo tar xf fastfetch.tar.gz --strip-components=3 -C /usr/local/bin fastfetch-linux-amd64/usr/bin/fastfetch
+```
+
 
 ```bash
 sudo apt-get install neofetch -y && sudo bash -c $'echo "neofetch" >> /etc/profile.d/mymotd.sh && chmod +x /etc/profile.d/mymotd.sh'
