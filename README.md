@@ -1,3 +1,41 @@
+### 🛡️Microsoft Defender troubleshooting
+```bash
+# General health check
+mdatp health
+mdatp health --field product_expiration
+mdatp connectivity test
+service mdatp status
+
+# Ensure the "mdatp" user exists
+id "mdatp"
+
+# Start/restart the service
+sudo service mdatp start
+sudo service mdatp restart
+
+# Turn on Microsoft Defender Antivirus PUA protection in block mode
+mdatp threat policy set --type potentially_unwanted_application --action block
+
+# Turn on Microsoft Defender Antivirus real-time protection
+mdatp config real-time-protection --value enabled
+
+# Fix Microsoft Defender for Endpoint impaired communications
+mdatp connectivity test
+
+curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
+
+# Fix Microsoft Defender for Endpoint sensor data collection
+# https://learn.microsoft.com/en-au/defender-endpoint/linux-support-install
+service mdatp status
+
+# Update Microsoft Defender Antivirus definitions
+mdatp definitions update
+
+# Check
+mdatp health --details definitions
+
+```
+
 ### Create a variable
 ```bash
 VARIABLE_NAME=value
